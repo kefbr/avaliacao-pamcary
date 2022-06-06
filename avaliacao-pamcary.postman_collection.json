@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Silvio Toledo\",\r\n    \"cpf\": \"12345678910\",\r\n    \"dataNascimento\": \"12-03-1996 02:00:21 AM\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Silvio Toledo\",\r\n    \"cpf\": \"12345678910\",\r\n    \"dataNascimento\": \"2014-01-01T00:00:00\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -20,11 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/pessoa",
+					"raw": "https://pamcary.herokuapp.com/pessoa",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pamcary",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"pessoa"
 					]
@@ -36,7 +38,19 @@
 			"name": "Listar Pessoas",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://pamcary.herokuapp.com/pessoa",
+					"protocol": "https",
+					"host": [
+						"pamcary",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa"
+					]
+				}
 			},
 			"response": []
 		},
@@ -44,7 +58,20 @@
 			"name": "Get Pessoa",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "https://pamcary.herokuapp.com/pessoa/1",
+					"protocol": "https",
+					"host": [
+						"pamcary",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa",
+						"1"
+					]
+				}
 			},
 			"response": []
 		},
@@ -54,11 +81,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/pessoa/cpf/12345678910",
+					"raw": "https://pamcary.herokuapp.com/pessoa/cpf/12345678910",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pamcary",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"pessoa",
 						"cpf",
@@ -83,11 +112,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/pessoa/6",
+					"raw": "https://pamcary.herokuapp.com/pessoa/6",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pamcary",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"pessoa",
 						"6"
@@ -102,11 +133,13 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/pessoa/6",
+					"raw": "https://pamcary.herokuapp.com/pessoa/6",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"pamcary",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"pessoa",
 						"6"
